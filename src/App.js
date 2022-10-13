@@ -18,11 +18,6 @@ const blocks = [
     id: "b3",
     block: "color",
   },
-
-  {
-    id: "b1",
-    block: "yellow",
-  },
 ];
 
 function App() {
@@ -30,13 +25,13 @@ function App() {
     <div className="App">
       {blocks.map((el) => {
         return el.block === "yellow" ? (
-          <Card className="yellow" />
+          <Card key={el.id} className="yellow" />
         ) : el.block === "green" ? (
-          <Card className="green" />
+          <Card key={el.id} className="green" />
         ) : el.block === "color" ? (
-          <Card className="lime" />
+          <Card key={el.id} className="lime" />
         ) : (
-          <Card className="red" />
+          <Card key={el.id} className="red" />
         );
       })}
     </div>
