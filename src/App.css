@@ -1,3 +1,28 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+}
+
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+.lime {
+  background-color: lime;
+}
+
+.red {
+  background-color: red;
 }
